@@ -1,0 +1,27 @@
+{
+  "name": "Python Applied to Business",
+  "image": "mcr.microsoft.com/devcontainers/python:1-3.11-bookworm",
+  "onCreateCommand": "bash .devcontainer/setup.sh",
+  "containerEnv": {
+    "TOKENIZERS_PARALLELISM": "false"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python",
+        "jupyter.askForKernelRestart": false,
+        "notebook.output.textLineLimit": 500
+      }
+    },
+    "codespaces": {
+      "openFiles": [
+        "notebooks/00_environment_check.ipynb"
+      ]
+    }
+  },
+  "remoteUser": "vscode"
+}
