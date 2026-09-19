@@ -1,0 +1,37 @@
+# =============================================================
+# Python Applied to Business - GitHub Codespaces course baseline
+# =============================================================
+
+# Notebook runtime
+jupyterlab
+ipykernel
+ipywidgets
+
+# Core data stack for business exercises
+numpy
+pandas
+matplotlib
+openpyxl
+requests
+python-dotenv
+
+# Spring course LangChain baseline
+langchain<1.0
+langchain-google-genai
+langchain-groq
+langchain-openai
+langchain-community<0.4
+langchain-chroma<1.0
+chromadb
+sentence-transformers
+langchain-huggingface
+
+# Agents
+crewai[openai]
+crewai-tools
+litellm
+
+# Documents and knowledge sources
+pypdf
+unstructured
+wikipedia
