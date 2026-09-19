@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local secrets
+.env
+*.env
+
+# Local caches / generated stores
+.cache/
+chroma_db/
+*.sqlite3
+
+# OS/editor
+.DS_Store
