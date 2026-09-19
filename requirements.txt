@@ -27,7 +27,7 @@ sentence-transformers
 langchain-huggingface
 
 # Agents
-crewai[openai]
+crewai
 crewai-tools
 litellm
 
