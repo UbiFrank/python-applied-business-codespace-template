@@ -3,7 +3,9 @@
   "image": "mcr.microsoft.com/devcontainers/python:1-3.11-bookworm",
   "onCreateCommand": "bash .devcontainer/setup.sh",
   "containerEnv": {
-    "TOKENIZERS_PARALLELISM": "false"
+    "TOKENIZERS_PARALLELISM": "false",
+    "HF_HUB_DISABLE_PROGRESS_BARS": "1",
+    "TRANSFORMERS_VERBOSITY": "error"
   },
   "customizations": {
     "vscode": {
@@ -14,7 +16,11 @@
       "settings": {
         "python.defaultInterpreterPath": "/usr/local/bin/python",
         "jupyter.askForKernelRestart": false,
-        "notebook.output.textLineLimit": 500
+        "notebook.output.textLineLimit": 500,
+        "jupyter.widgetScriptSources": [
+          "jsdelivr.com",
+          "unpkg.com"
+        ]
       }
     },
     "codespaces": {
