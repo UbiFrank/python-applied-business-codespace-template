@@ -1,29 +1,37 @@
-# Course environment - installed automatically when a Codespace is created (postCreateCommand in .devcontainer).
-# PyTorch is installed before this file, in its CPU-only version (about 200 MB instead of 2.5 GB of GPU libraries).
-# Updated 22 October 2026 with everything the redesigned notebooks of Sessions 4-8 use.
+# =============================================================
+# Python Applied to Business - GitHub Codespaces course baseline
+# =============================================================
 
-# Week 1 - Python core and data
-numpy>=1.26
-pandas>=2.2
-openpyxl>=3.1
-matplotlib>=3.8
-seaborn>=0.13
-ipykernel>=6.29
-ipywidgets>=8.1                 # forms of the notebooks (Session 5 onwards)
+# Notebook runtime
+jupyterlab
+ipykernel
+ipywidgets
 
-# Week 2 - machine learning
-scikit-learn>=1.5
-shap>=0.46
-sentence-transformers>=3.0      # embeddings: themes by meaning (S5), document search (S6)
+# Core data stack for business exercises
+numpy
+pandas
+matplotlib
+openpyxl
+requests
+python-dotenv
 
-# Week 3 - LLMs, chatbots and agents
-openai>=1.50                    # utils/llm.py: Mistral (default), OpenAI, Anthropic through the OpenAI-compatible API
-huggingface_hub>=0.25
-langchain>=0.3
-langchain-openai>=0.2
-langchain-community>=0.3
-langchain-text-splitters>=0.3
-chromadb>=0.5                   # vector store (S6, S8)
-faiss-cpu>=1.8
-pypdf>=5.0
-crewai>=0.80
+# Spring course LangChain baseline
+langchain<1.0
+langchain-google-genai
+langchain-groq
+langchain-openai
+langchain-community<0.4
+langchain-chroma<1.0
+chromadb
+sentence-transformers
+langchain-huggingface
+
+# Agents
+crewai
+crewai-tools
+litellm
+
+# Documents and knowledge sources
+pypdf
+unstructured
+wikipedia
