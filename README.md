@@ -1,29 +1,34 @@
-# Python Applied to Business - Course Codespace
+# Python Applied to Business — Shanghai, October 2026
 
-This repository is the cloud programming environment for the course.
-No local Python installation is required.
+Working repository of the module (International MSc in Management, Shanghai term).
+Lecturer: Dr. Francisco Astudillo-Pacheco.
 
-## Student workflow
+You do not install anything on your laptop. The whole module runs in **GitHub Codespaces**: a computer in the
+cloud, opened in your browser, with Python, Jupyter, GitHub Copilot and every library of the course already in place
+(a new Codespace installs them by itself in about ten minutes; see `requirements.txt`).
 
-1. Sign in to GitHub.
-2. Open the course Codespaces link supplied by the instructor.
-3. Create or resume your Codespace.
-4. Wait until the automatic setup finishes.
-5. Open `notebooks/00_environment_check.ipynb` if it is not already open.
-6. Select the kernel **Python 3.11 - Python Applied to Business** if prompted.
-7. Run all cells.
-8. Enter your `ZAI_API_KEY` when requested. The key is hidden while typing.
-9. When all tests show `[OK]`, continue with the course notebooks.
+## First day, in five steps (detailed in Lab 1.1)
 
-## Important rules
+1. Sign in to GitHub with the account you created with your school e-mail address.
+2. Open this repository and choose **Use this template → Create a new repository** (owner: you; visibility: private).
+3. In *your* copy: **Code → Codespaces → Create codespace on main**. The first start takes a few minutes.
+4. Open `notebooks/S01/S01-A_environment_check.ipynb`, select the kernel **Python 3 (course)** and run it from top to bottom.
+5. From Session 5: your own Mistral key. Store it as a Codespaces secret named `MISTRAL_API_KEY` (Settings → Codespaces →
+   Secrets, with access to your copy of the repository) and restart the Codespace; or paste it once in the notebook with
+   *Remember it in this Codespace* ticked.
 
-- Do not run `pip install` unless the instructor explicitly asks you to.
-- Do not put API keys directly into a notebook cell.
-- Exchange group notebooks using Download / Upload of `.ipynb` files.
-- Download important notebooks before deleting a Codespace.
+## House rules
 
-## One-click link for the instructor
+- **Stop your Codespace when you finish** (Codespaces menu → Stop current codespace). A stopped Codespace keeps your files and does not consume hours.
+- **Commit and push at the end of every session.** What is pushed is safe; what is only in the Codespace can be lost if the Codespace is deleted.
+- **Keys never appear in code.** They live in Codespaces secrets and are read with `os.environ`.
+- Use GitHub Copilot as an assistant that you verify: read, test, fix, verify.
 
-After publishing this repository, replace OWNER and REPO below:
+## What is where
 
-`https://codespaces.new/OWNER/REPO?quickstart=1`
+| Folder | Content |
+|---|---|
+| `notebooks/S01` … `notebooks/S09` | Practice notebooks, one folder per session |
+| `data/` | Every dataset used in class, with its source and licence (`data/README.md`) |
+| `utils/` | Small helpers shared by the notebooks (for example, the connection to the language models) |
+| `tools/` | Lecturer's tools (data preparation) |
