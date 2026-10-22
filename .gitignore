@@ -17,3 +17,6 @@ chroma_db/
 
 # OS/editor
 .DS_Store
+
+# Instructor-only files: never in the repository
+data/backer_survey_labels.csv
